@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000000;
+        }
+        .desktop {
+            position: relative;
+            width: 1420px;
+            height: 1024px;
+            padding: 10px 10px;
+            margin: 101px 10px;
+            background: #FFFFFF;
+        }
+
+        .rect1 {
+            position: absolute;
+            width: 1440px;
+            height: 508px;
+            left: 0px;
+            top: -61px;
+
+            background: #656CEC;
+            border-radius: 64px;
+        }
+
+        .ell1 {
+            position: absolute;
+            width: 172px;
+            height: 172px;
+            left: 914px;
+            top: 216px;
+            border-radius: 180px;
+            background: #FFFFFF;
+
+
+        }
+
+        .ell2 {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            left: 920px;
+            top: 222px;
+            border-radius: 180px;
+            background: #BABEFF;
+
+
+        }
+
+        .grp3 {
+            position: absolute;
+            width: 172px;
+            height: 172px;
+            left: 914px;
+            top: 216px;
+        }
+
+        .rect2 {
+            position: absolute;
+            width: 1440px;
+            height: 100px;
+            left: 0px;
+            top: 0px;
+
+            background: #656CEC;
+        }
+
+        .leader {
+            position: absolute;
+            width: 362px;
+            height: 58px;
+            left: 558px;
+            top: 18px;
+
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 64px;
+            /* or 100% */
+
+
+            color: #FFFFFF;
+        }
+
+        .line1 {
+            position: absolute;
+            width: 1437px;
+            height: 0px;
+            left: 0px;
+            top: 103px;
+
+            border: 2px solid #FFFFFF;
+            transform: rotate(-0.12deg);
+        }
+
+        .ell1-1 {
+            position: absolute;
+            width: 230.97px;
+            height: 230.97px;
+            left: 602px;
+            top: 143.66px;
+            border-radius: 200px;
+            background: #FFFFFF;
+        }
+
+        .ell2-1 {
+            position: absolute;
+            width: 214.86px;
+            height: 214.86px;
+            left: 610.06px;
+            top: 151.71px;
+            border-radius: 200px;
+            background: #BABEFF;
+        }
+
+        .grp7 {
+            position: absolute;
+            width: 228.29px;
+            height: 42.97px;
+            left: 608.71px;
+            top: 384.03px;
+
+        }
+
+        .rect3 {
+            position: absolute;
+            width: 228.29px;
+            height: 42.97px;
+            left: 608.71px;
+            top: 384.03px;
+
+            background: #BABEFF;
+            border-radius: 36px;
+        }
+
+        .amanda {
+            position: absolute;
+            width: 106.09px;
+            height: 25.51px;
+            left: 639.6px;
+            top: 390.74px;
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            
+            color: #4848e5;
+            z-index: 10;
+
+
+        }
+        .amanda a{
+            text-decoration: none;
+        }
+
+        .ell4 {
+            position: absolute;
+            width: 2.69px;
+            height: 2.69px;
+            left: 740px;
+            top: 405px;
+
+            background: #FFFFFF;
+            border-radius: 36px;
+        }
+
+        .num1 {
+            position: absolute;
+            width: 51.03px;
+            height: 22.83px;
+            left: 761.8px;
+            top: 393.43px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #3d0366;
+        }
+
+
+        .grp1 {
+            position: absolute;
+            width: 235px;
+            height: 283.34px;
+            left: 602px;
+            top: 143.66px;
+        }
+
+        .rect3-1 {
+            position: absolute;
+            width: 170px;
+            height: 32px;
+            left: 915px;
+            top: 394px;
+
+            background: #BABEFF;
+            border-radius: 16px;
+        }
+
+        .amanda-1 {
+            position: absolute;
+            width: 63px;
+            height: 15px;
+            left: 946px;
+            top: 401px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .ell4-1 {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            left: 1014px;
+            top: 409px;
+
+            background: #FFFFFF;
+        }
+
+        .num1-1 {
+            position: absolute;
+            width: 33px;
+            height: 15px;
+            left: 1021px;
+            top: 401px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .rect3-1-2 {
+            position: absolute;
+            width: 170px;
+            height: 32px;
+            left: 920px;
+            top: 394px;
+
+            background: #BABEFF;
+            border-radius: 16px;
+        }
+
+        .jeffery {
+            position: absolute;
+            width: 79px;
+            height: 19px;
+            left: 943px;
+            top: 399px;
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #FFFFFF;
+
+        }
+
+        .ell4-1-1 {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            left: 1017px;
+            top: 409px;
+
+            background: #FFFFFF;
+        }
+
+        .num2 {
+            position: absolute;
+            width: 38px;
+            height: 17px;
+            left: 1034px;
+            top: 401px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #FFFFFF;
+
+
+        }
+
+        .grp7 {
+            position: absolute;
+            width: 228.29px;
+            height: 42.97px;
+            left: 608.71px;
+            top: 384.03px;
+
+        }
+
+        .grp7-1 {
+            position: absolute;
+            width: 175px;
+            height: 32px;
+            left: 915px;
+            top: 394px;
+
+        }
+
+        .ell1-2 {
+            position: absolute;
+            width: 172px;
+            height: 172px;
+            left: 338px;
+            top: 216px;
+            border-radius: 180px;
+            background: #FFFFFF;
+        }
+
+        .ell2-2 {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            left: 344px;
+            top: 222px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .grp2 {
+            position: absolute;
+            width: 172px;
+            height: 172px;
+            left: 338px;
+            top: 216px;
+
+        }
+
+        .rect3-2 {
+            position: absolute;
+            width: 156px;
+            height: 32px;
+            left: 346px;
+            top: 395px;
+
+            background: #BABEFF;
+            border-radius: 16px;
+        }
+
+        .jeremy {
+            position: absolute;
+            width: 72px;
+            height: 20px;
+            left: 360px;
+            top: 400px;
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #FFFFFF;
+        }
+
+        .ell4-1-2 {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            left: 430px;
+            top: 411px;
+
+            background: #FFFFFF;
+        }
+
+        .num {
+            position: absolute;
+            width: 43px;
+            height: 19px;
+            left: 445px;
+            top: 401px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #FFFFFF;
+
+        }
+
+        .grp7 {
+            position: absolute;
+            width: 175px;
+            height: 32px;
+            left: 915px;
+            top: 394px;
+        }
+
+        .grp9 {
+            position: absolute;
+            width: 172px;
+            height: 211px;
+            left: 338px;
+            top: 216px;
+        }
+
+        .rect6 {
+            position: absolute;
+            width: 1440px;
+            height: 100px;
+            left: 0px;
+            top: 584px;
+
+            background: #D2D4F2;
+        }
+
+        .five {
+            position: absolute;
+            width: 23px;
+            height: 36px;
+            left: 40px;
+            top: 617px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+
+        }
+
+        .num3 {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 1123px;
+            top: 617px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+
+        }
+
+        .jenny {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 255px;
+            top: 617px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+
+        }
+
+        .ell5 {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            left: 59px;
+            top: 597px;
+
+            background: #D9D9D9;
+        }
+
+        .ell1-1-1 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 594px;
+            border-radius: 180px;
+            background: #FFFFFF;
+
+        }
+
+        .ell2-2-1 {
+            position: absolute;
+            width: 74.42px;
+            height: 74.42px;
+            left: 124.79px;
+            top: 596.79px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .grp2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 594px;
+
+        }
+
+        .grp9 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 594px;
+
+        }
+
+        .rect11 {
+            position: absolute;
+            width: 1439px;
+            height: 100px;
+            left: 1px;
+            top: 470px;
+
+            background: #D2D4F2;
+        }
+
+        .num4 {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 1119px;
+            top: 504px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+        }
+
+        .joe {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 255px;
+            top: 500px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+        }
+
+        .four {
+            position: absolute;
+            width: 23px;
+            height: 36px;
+            left: 40px;
+            top: 500px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+        }
+
+        .four-1 {
+            position: absolute;
+            width: 23px;
+            height: 36px;
+            left: 40px;
+            top: 500px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+        }
+
+        .ell1-1-2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 125px;
+            top: 480px;
+            border-radius: 180px;
+            background: #FFFFFF;
+        }
+
+        .ell2-2-2 {
+            position: absolute;
+            width: 74.42px;
+            height: 74.42px;
+            left: 127.79px;
+            top: 482.79px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .grp2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 125px;
+            top: 480px;
+
+        }
+
+        .grp14 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 125px;
+            top: 480px;
+
+        }
+
+        .rect9 {
+            position: absolute;
+            width: 1439px;
+            height: 100px;
+            left: 1px;
+            top: 927px;
+
+            background: #D2D4F2;
+        }
+
+        .num5 {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 1119px;
+            top: 960px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+        }
+
+        .sally {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 251px;
+            top: 960px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+        }
+
+        .ell8 {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            left: 55px;
+            top: 940px;
+
+            background: #D9D9D9;
+        }
+
+        .ell1-1-3 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 118px;
+            top: 937px;
+            border-radius: 180px;
+            background: #FFFFFF;
+        }
+
+        .ell2-2-3 {
+            position: absolute;
+            width: 74.42px;
+            height: 74.42px;
+            left: 120.79px;
+            top: 939.79px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .grp2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 118px;
+            top: 937px;
+
+        }
+
+        .grp13 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 118px;
+            top: 937px;
+
+        }
+
+        .rect8 {
+            position: absolute;
+            width: 1440px;
+            height: 100px;
+            left: 0px;
+            top: 813px;
+
+            background: #D2D4F2;
+
+        }
+
+        .num6 {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 1123px;
+            top: 846px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+
+        }
+
+        .stella {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 255px;
+            top: 846px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+
+        }
+
+        .ell7 {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            left: 59px;
+            top: 826px;
+
+            background: #D9D9D9;
+
+        }
+
+        .ell1-1-4 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 823px;
+            border-radius: 180px;
+            background: #FFFFFF;
+        }
+
+        .ell2-2-4 {
+
+            position: absolute;
+            width: 74.42px;
+            height: 74.42px;
+            left: 124.79px;
+            top: 825.79px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .grp2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 823px;
+
+        }
+
+        .grp12 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 823px;
+
+        }
+
+        .rect7 {
+
+            position: absolute;
+            width: 1440px;
+            height: 100px;
+            left: 0px;
+            top: 698px;
+
+            background: #D2D4F2;
+        }
+
+        .num7 {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 1123px;
+            top: 731px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+        }
+
+        .josh {
+            position: absolute;
+            width: 227px;
+            height: 36px;
+            left: 255px;
+            top: 731px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #000000;
+        }
+
+        .ell6 {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            left: 59px;
+            top: 711px;
+
+            background: #D9D9D9;
+        }
+
+        .ell1-1-5 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 708px;
+            border-radius: 180px;
+            background: #FFFFFF;
+        }
+
+        .ell2-2-5 {
+            position: absolute;
+            width: 74.42px;
+            height: 74.42px;
+            left: 124.79px;
+            top: 710.79px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .grp2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 708px;
+        }
+
+        .grp11 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            left: 122px;
+            top: 708px;
+
+        }
+
+        .six {
+            position: absolute;
+            width: 23px;
+            height: 36px;
+            left: 40px;
+            top: 731px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+        }
+
+        .seven {
+            position: absolute;
+            width: 23px;
+            height: 36px;
+            left: 40px;
+            top: 841px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+
+
+        }
+
+        .eight {
+            position: absolute;
+            width: 23px;
+            height: 36px;
+            left: 40px;
+            top: 955px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #1E1E1E;
+        }
+
+        .ell11-1 {
+
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 406px;
+            top: 174px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .two {
+            position: absolute;
+            width: 17px;
+            height: 26px;
+            left: 418px;
+            top: 178px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #171313;
+
+        }
+
+        .grp15 {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 406px;
+            top: 174px;
+        }
+
+        .ell11-2 {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 698px;
+            top: 105px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .one {
+            position: absolute;
+            width: 17px;
+            height: 26px;
+            left: 710px;
+            top: 109px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #0f0e0e;
+        }
+
+        .grp16 {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 698px;
+            top: 105px;
+        }
+
+        .ell11-3 {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 983px;
+            top: 174px;
+            border-radius: 180px;
+            background: #BABEFF;
+        }
+
+        .three {
+            position: absolute;
+            width: 17px;
+            height: 26px;
+            left: 995px;
+            top: 178px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #0c0c0c;
+        }
+
+        .grp17 {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 983px;
+            top: 174px;
+
+        }
+        .grp1 img{
+            height: 222px;
+            width: 222px;
+            border-radius: 150px;
+            margin: 5px 5px;
+        }
+        .ell2-2 img{
+            height: 163px;
+            width: 163px;
+            border-radius: 150px;
+            /* margin: 1px 1px;             */
+        }
+        .grp3 img{
+            height: 163px;
+            width: 163px;
+            border-radius: 150px;
+            margin: 6px 5px; 
+        }
+        .leader:hover{
+            color: gold;
+        }
+        .grp9 img{
+            height: 75px;
+            width: 75px;
+            border-radius: 150px;
+            margin: 2px 3px;
+        }
+        .grp12 img{
+            height: 75px;
+            width: 75px;
+            border-radius: 150px;
+            margin: 2px 3px;
+        }
+        .grp13 img{
+            height: 75px;
+            width: 75px;
+            border-radius: 150px;
+            margin: 2px 3px;
+        }
+        .grp14 img{
+            height: 75px;
+            width: 75px;
+            border-radius: 150px;
+            margin: 2px 3px;
+        }
+        .grp11 img{
+            height: 75px;
+            width: 75px;
+            border-radius: 150px;
+            margin: 2px 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="desktop">
+    
+    <div class="rect1">
+
+    </div>
+    <div class="ell1">
+
+    </div>
+    <div class="ell2">
+
+    </div>
+    <div class="grp3">
+       <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Jeffrey_Dahmer_Milwaukee_Police_1991_mugshot.jpg" alt="">
+    </div>
+    <div class="rect2">
+
+    </div>
+    <div class="leader">
+        Leaderboard
+    </div>
+    <div class="line1">
+
+    </div>
+    <div class="ell1-1">
+
+    </div>
+    <div class="ell2-1">
+
+    </div>
+    <div class="grp7">
+        
+    </div>
+    <div class="rect3">
+
+    </div>
+    <div class="amanda">
+        <a href="https://en.wikipedia.org/wiki/Amanda_Bynes#Early_life" target="blank" >Amanda</a>
+        </div>
+    <div class="ell4">
+
+    </div>
+    <div class="num1">
+        764
+    </div>
+    <div class="grp1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Amanda_Bynes_on_the_Red_Carpet_%28cropped2%29.jpg/440px-Amanda_Bynes_on_the_Red_Carpet_%28cropped2%29.jpg" alt="Error">
+    </div>
+    <div class="rect3-1">
+    </div>
+    <div class="amanda-1"></div>
+    <!-- <div class="ell4-1"></div> -->
+    <div class="num1-1"></div>
+    <div class="rect3-1-1"></div>
+    <div class="jeffery">
+        <a href="https://www.britannica.com/biography/Jeffrey-Dahmer" target="blank">Jeffery</a>
+    </div>
+    <div class="ell4-1-1">
+    </div>
+    <div class="num2">
+        542
+    </div>
+    <div class="rect3-2"></div>
+    <div class="jeremy">
+        <a href="https://en.wikipedia.org/wiki/Jeremy_Renner" target="blank" >Jeremy</a>
+    </div>
+    <div class="ell4-1-2"></div>
+    <div class="num">
+        672
+    </div>
+    <div class="grp7">
+        
+    </div>
+    <div class="grp7-1">
+        
+    </div>
+    <div class="ell1-2">
+
+    </div>
+    <div class="ell2-2">
+      <img src="https://static01.nyt.com/images/2023/05/06/lens/06xp-renner-01/06xp-renner-01-superJumbo.jpg?quality=75&auto=webp" alt="">
+    </div>
+    <div class="grp2">
+
+    </div>
+
+    <div class="grp7">
+
+    </div>
+    <div class="grp9">
+
+    </div>
+    <div class="rect6">
+
+    </div>
+    <div class="five">
+        5
+    </div>
+    <div class="num3">
+        438
+    </div>
+    <div class="jenny">
+        <a href="https://en.wikipedia.org/wiki/Jenny_McCarthy" target="blank" >Jenny</a>
+    </div>
+    <div class="ell5">
+
+    </div>
+    <div class="ell1-1-1"></div>
+    <div class="ell2-2-1"></div>
+    <div class="grp2"></div>
+    <div class="grp9">
+       <img src="https://th.bing.com/th/id/OIP.0VS86jODymR6SB9kyp3dJQHaKM?pid=ImgDet&rs=1" alt="">
+    </div>
+
+    <div class="rect11">
+
+    </div>
+    <div class="num4">
+        445
+    </div>
+    <div class="joe">
+        <a href="https://en.wikipedia.org/wiki/Joe_(singer)" target="blank" >Joe</a>
+    </div>
+    <div class="four">
+        4
+    </div>
+    <div class="four-1">
+        4
+    </div>
+    <div class="ell1-1-2"></div>
+    <div class="ell2-2-2"></div>
+    <div class="grp2"></div>
+    <div class="grp14">
+       <img src="https://images.squarespace-cdn.com/content/v1/54905286e4b050812345644c/1568661918885-6WYA345V2D7QW7CE2318/ke17ZwdGBToddI8pDm48kH57sgD1tvYEeMmeWW5KQ1JZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGP3PEk-4tU-lRdiu5v5GR_LnhVR9M5gwz1lz67kkv7Mxur-lC0WofN0YB1wFg-ZW0/Bitmoji.png" alt="">
+    </div>
+    <div class="rect9">
+
+    </div>
+    <div class="num5">
+        300
+    </div>
+    <div class="sally">
+        <a href="https://en.wikipedia.org/wiki/Sally_Hawkins" target="blank" >Sally</a>
+    </div>
+    <div class="ell8">
+
+    </div>
+    <div class="ell1-1-3"></div>
+    <div class="ell2-2-3"></div>
+    <div class="grp2"></div>
+    <div class="grp13">
+        <img src="https://th.bing.com/th/id/OIP.vEA2mrT-Wf6piwgDPvHCjAAAAA?pid=ImgDet&w=254&h=254&rs=1" alt="">
+
+    </div>
+    <div class="rect8">
+
+    </div>
+    <div class="num6">
+        321
+    </div>
+    <div class="stella">
+
+        <a href="https://www.wikidata.org/wiki/Q451889" target="blank" >Stella</a>
+    </div>
+    <div class="ell7">
+
+    </div>
+    <div class="ell1-1-4"></div>
+    <div class="ell2-2-4"></div>
+    <div class="grp2"></div>
+    <div class="grp12">
+        <img src="https://th.bing.com/th/id/OIP.XbW_M5efyBgp-NcRR-X-SAHaJQ?pid=ImgDet&w=1024&h=1280&rs=1" alt="">
+
+    </div>
+    <div class="rect7">
+
+    </div>
+    <div class="num7">
+        432
+    </div>
+    <div class="josh">
+        <a href="https://en.wikipedia.org/wiki/Josh_Richards_(internet_personality)" target="blank" >Josh</a>
+    </div>
+    <div class="ell6">
+
+    </div>
+    <div class="ell1-1-5"></div>
+    <div class="ell2-2-5"></div>
+    <div class="grp2"></div>
+    <div class="grp11">
+        <img src="https://www.csustan.edu/sites/default/files/groups/Human%20Resources%2C%20Equal%20Opportunity%2C%20and%20Compliance/images/alexs_bitmoji.png" alt="">
+    </div>
+    <div class="six">
+        6
+    </div>
+    <div class="seven">
+        7
+    </div>
+    <div class="eight">
+        8
+    </div>
+    <div class="ell11-1"></div>
+    <div class="two">
+        2
+    </div>
+    <div class="grp15"></div>
+    <div class="ell11-2"></div>
+    <div class="one">
+        1
+    </div>
+    <div class="grp16"></div>
+    <div class="ell11-3"></div>
+    <div class="three">
+        3
+    </div>
+    <div class="grp17"></div>
+    </div>
+</body>
+
+</html>
